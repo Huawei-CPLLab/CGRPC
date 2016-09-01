@@ -1,0 +1,42 @@
+diff -ur a/grpc/impl/codegen/grpc_types.h b/grpc/impl/codegen/grpc_types.h
+--- a/grpc/impl/codegen/grpc_types.h	2016-07-01 10:32:59.657587141 -0400
++++ b/grpc/impl/codegen/grpc_types.h	2016-07-23 15:51:01.221393136 -0400
+@@ -36,6 +36,7 @@
+ 
+ #include <grpc/impl/codegen/byte_buffer.h>
+ #include <grpc/impl/codegen/status.h>
++#include <grpc/impl/codegen/time.h> 
+ 
+ #include <stddef.h>
+ 
+diff -ur a/grpc/impl/codegen/sync.h b/grpc/impl/codegen/sync.h
+--- a/grpc/impl/codegen/sync.h	2016-07-01 10:32:59.657587141 -0400
++++ b/grpc/impl/codegen/sync.h	2016-07-23 15:48:19.581577757 -0400
+@@ -31,6 +31,7 @@
+  *
+  */
+ 
++#if 0
+ #ifndef GRPC_IMPL_CODEGEN_SYNC_H
+ #define GRPC_IMPL_CODEGEN_SYNC_H
+ /* Synchronization primitives for GPR.
+@@ -318,3 +319,4 @@
+ #endif
+ 
+ #endif /* GRPC_IMPL_CODEGEN_SYNC_H */
++#endif
+diff -ur a/grpc/support/sync.h b/grpc/support/sync.h
+--- a/grpc/support/sync.h	2016-07-01 10:32:59.661587128 -0400
++++ b/grpc/support/sync.h	2016-07-23 15:48:36.653565586 -0400
+@@ -31,9 +31,11 @@
+  *
+  */
+ 
++#if 0
+ #ifndef GRPC_SUPPORT_SYNC_H
+ #define GRPC_SUPPORT_SYNC_H
+ 
+ #include <grpc/impl/codegen/sync.h>
+ 
+ #endif /* GRPC_SUPPORT_SYNC_H */
++#endif

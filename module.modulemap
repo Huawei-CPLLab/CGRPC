@@ -1,0 +1,5 @@
+module CGRPC [system] {
+  header "grpc.h"
+  link "grpc"
+  export *
+}
